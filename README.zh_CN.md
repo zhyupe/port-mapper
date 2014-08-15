@@ -23,10 +23,11 @@
  3. 在 **公网服务器** 上运行 *server.js*
  4. 在 **中转计算机** 上运行 *client.js*
 
-*** [提示] 你必须先执行第三步，否则 client.js 无法正常运行 ***
+***[提示] 你必须先执行第三步，否则 client.js 无法正常运行***
 
 ##设置定义
-* [提示] 你需要保证 server.js 中的设置值与 client.js 中的一致. *
+*[提示] 你需要保证 server.js 中的设置值与 client.js 中的一致*
+
 ### server.js
 ```javascript
 var PUBLIC_PORT   = 80; // 从公网访问的端口
