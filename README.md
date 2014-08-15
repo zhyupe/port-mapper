@@ -23,10 +23,11 @@ The project is published under GPLv2 License.
  3. Run *server.js* on the **front** server.
  4. Run *client.js* on the **client** server.
 
-*** [Notice] You must do the step 3 first, or the client won't work correctly. ***
+***[Notice] You must do the step 3 first, or the client won't work correctly.***
 
 ##Config Definition
-* [Notice] You must keep settings in server.js the same as those in client.js. *
+*[Notice] You must keep settings in server.js the same as those in client.js.*
+
 ### server.js
 ```javascript
 var PUBLIC_PORT   = 80; // The port you can access from internet
