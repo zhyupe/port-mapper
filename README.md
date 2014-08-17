@@ -20,16 +20,16 @@ The project is published under GPLv2 License.
 
 ##How to
 
- 1. Edit settings in *server.js* and *client.js* .
+ 1. Edit settings in *config.json* .
  2. Upload files to both servers.
  3. Run *server.js* on the **front** server.
  4. Run *client.js* on the **client** server.
 
 ***[Notice] You must do the step 3 first, or the client won't work correctly.***
 
-##Config Definition
+##Setting Definition
 
-[Update] Configs is now combined. You can just edit *config.json* and when there is an update, you don't need to edit again! (Just backup the config.json and restore)
+[Update] Settings is now combined. You can just edit *config.json* and when there is an update, you don't need to edit again! (Just backup the config.json and restore)
 
 ```javascript
 {
