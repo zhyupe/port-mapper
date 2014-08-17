@@ -26,25 +26,21 @@
 ***[提示] 你必须先执行第三步，否则 client.js 无法正常运行***
 
 ##设置定义
-*[提示] 你需要保证 server.js 中的设置值与 client.js 中的一致*
 
-### server.js
+[更新] 配置部分现在已被合并。您只需要编辑 *config.json*，且更新时只需要保留配置文件即可。
+
 ```javascript
-var PUBLIC_PORT   = 80; // 从公网访问的端口
-var CONNECT_SIGN  = ''; // 连接认证串，可以避免未经许可的访问
-var CONNECT_PORT  = 1201; // 公网服务器通信端口
-var TRANS_PORT    = 1202; // 公网服务器传输端口
-```
-### client.js
-```javascript
-var GATEWAY       = ''; // 公网服务器的 IP 或 域名
+{
+    "GATEWAY"      : "",    // 公网服务器的 IP 或 域名
 
-var SERVER_HOST   = ''; // 内网服务器的 IP 或 域名
-var SERVER_PORT   = 80; // 公网服务器的端口
+    "SERVER_HOST"  : "",    // 内网服务器的 IP 或 域名
+    "SERVER_PORT"  : 80,    // 内网服务器的端口
 
-var CONNECT_SIGN  = ''; // 连接认证串，可以避免未经许可的访问
-var CONNECT_PORT  = 1201; // 公网服务器通信端口
-var TRANS_PORT    = 1202; // 公网服务器传输端口
+    "CONNECT_SIGN" : "",    // 连接认证串，可以避免未经许可的访问
+    "CONNECT_PORT" : 1201,  // 公网服务器通信端口
+    "TRANS_PORT"   : 1202,  // 公网服务器传输端口
+    "PUBLIC_PORT"  : 80     // 从公网访问的端口
+}
 ```
 
   [1]: PRINCIPLE.md

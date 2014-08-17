@@ -1,0 +1,11 @@
+{
+    "GATEWAY"      : "",
+
+    "SERVER_HOST"  : "",
+    "SERVER_PORT"  : 80,
+
+    "CONNECT_SIGN" : "",
+    "CONNECT_PORT" : 1201,
+    "TRANS_PORT"   : 1202,
+    "PUBLIC_PORT"  : 80
+}
