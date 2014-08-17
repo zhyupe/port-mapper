@@ -18,7 +18,7 @@
  * 在公网服务器和中转计算机上安装 node.js 运行时
 
 ##使用方法
- 1. 编辑 *server.js* 和 *client.js* 中的设置
+ 1. 编辑 *config.json* 中的设置
  2. 上传文件
  3. 在 **公网服务器** 上运行 *server.js*
  4. 在 **中转计算机** 上运行 *client.js*
