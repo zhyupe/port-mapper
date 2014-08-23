@@ -34,6 +34,15 @@ var connect = function () {
                     console.log('[LOCAL_CLIENT] CONNECTED ' + data[1]);
                     status[0] = true;
                     doPipe();
+					localClient.on('error', function (err) {
+						console.error(err);
+						try {
+							localClient.end();
+						}
+						catch (e) {
+							console.error(e);
+						}
+					});
                     localClient.on('close', function () {
                         console.log('[LOCAL_CLIENT] CLOSED ' + data[1]);
                         status[0] = false;
@@ -44,6 +53,15 @@ var connect = function () {
                     console.log('[TRANS_CLIENT] CONNECTED ' + data[1]);
                     status[1] = true;
                     doPipe();
+					gatewayClient.on('error', function (err) {
+						console.error(err);
+						try {
+							gatewayClient.end();
+						}
+						catch (e) {
+							console.error(e);
+						}
+					});
                     gatewayClient.on('close', function () {
                         console.log('[TRANS_CLIENT] CLOSED ' + data[1]);
                         status[1] = false;
