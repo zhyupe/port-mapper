@@ -29,6 +29,7 @@
 ##设置定义
 
 设置应在 *config.json* 中进行配置。
+
 请**不要**删除 *config.example.json*。此文件用于确保设置格式为最新版本，并保证程序正常运行。
 
 ```javascript

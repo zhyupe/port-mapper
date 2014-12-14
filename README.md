@@ -31,6 +31,7 @@ The project is published under GPLv2 License.
 ##Setting Definition
 
 Settings should be defined in *config.json*
+
 **DO NOT** delete *config.example.json*. We need it to make sure the config structure is latest version and the tool can work properly.
 
 ```javascript
