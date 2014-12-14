@@ -29,10 +29,13 @@ The project is published under GPLv2 License.
 
 ##Setting Definition
 
-[Update] Settings is now combined. You can just edit *config.json* and when there is an update, you don't need to edit again! (Just backup the config.json and restore)
+Settings should be defined in *config.json*
+**DO NOT** delete *config.example.json*. We need it to make sure the config structure is latest version and the tool can work properly.
 
 ```javascript
 {
+    "LOG_LEVEL"    : "INFO", // The minimum level of log to be logged
+
     "GATEWAY"      : "",    // The ip or domain of the front server
 
     "SERVER_HOST"  : "",    // The ip or domain of the back server
@@ -45,5 +48,9 @@ The project is published under GPLv2 License.
 }
 ```
 
+## Contributors
+List of contributors can be found at [here][3].
+
   [1]: PRINCIPLE.md
   [2]: README.zh_CN.md
+  [3]: https://github.com/zhyupe/port-mapper/graphs/contributors

@@ -27,10 +27,13 @@
 
 ##设置定义
 
-[更新] 配置部分现在已被合并。您只需要编辑 *config.json*，且更新时只需要保留配置文件即可。
+设置应在 *config.json* 中进行配置。
+请**不要**删除 *config.example.json*。此文件用于确保设置格式为最新版本，并保证程序正常运行。
 
 ```javascript
 {
+    "LOG_LEVEL"    : "INFO", // 被记录的日志的最低等级
+
     "GATEWAY"      : "",    // 公网服务器的 IP 或 域名
 
     "SERVER_HOST"  : "",    // 内网服务器的 IP 或 域名
@@ -43,5 +46,9 @@
 }
 ```
 
+## 贡献者
+贡献者名单可以在 [这里][3] 查看
+
   [1]: PRINCIPLE.md
   [2]: README.md
+  [3]: https://github.com/zhyupe/port-mapper/graphs/contributors
