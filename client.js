@@ -1,5 +1,5 @@
 var net = require('net');
-var tcp_helper = require('./tcp_helper');
+var tcp_helper = require('./lib/tcp_helper');
 var config = require('./config.json');
 
 var retry = 0;
