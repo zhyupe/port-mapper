@@ -22,8 +22,9 @@ The project is published under GPLv2 License.
 
  1. Edit settings in *config.json* .
  2. Upload files to both servers.
- 3. Run *server.js* on the **front** server.
- 4. Run *client.js* on the **client** server.
+ 3. Run ```npm install``` in port-mapper's folder on both servers.
+ 4. Run *server.js* on the **front** server.
+ 5. Run *client.js* on the **client** server.
 
 ***[Notice] You must do the step 3 first, or the client won't work correctly.***
 
