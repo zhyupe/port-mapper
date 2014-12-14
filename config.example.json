@@ -1,4 +1,6 @@
 {
+    "LOG_LEVEL"    : "INFO",
+
     "GATEWAY"      : "",
 
     "SERVER_HOST"  : "",
