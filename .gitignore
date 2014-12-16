@@ -1,6 +1,6 @@
 config.json
 
-logs/*
+logs/*.log
 node_modules/*
 
 .idea
