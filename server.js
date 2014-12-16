@@ -8,8 +8,8 @@ var logger = log4js.getLogger('server');
 logger.setLevel(config.LOG_LEVEL);
 
 var connectServer = require('./lib/server/connectServer')
-        (logger, config.CONNECT_PORT, config.CONNECT_SIGN),
+        (logger, config.CONNECT_PORT, config.CONNECT_SIGN, config.PUBLIC_AUTH),
      publicServer = require('./lib/server/publicServer')
-        (logger, config.PUBLIC_PORT,  connectServer),
+        (logger, config.PUBLIC_PORT,  connectServer, config.PUBLIC_AUTH),
       transServer = require('./lib/server/transServer')
         (logger, config.TRANS_PORT,   connectServer, publicServer);
