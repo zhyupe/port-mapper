@@ -32,21 +32,25 @@ The project is published under GPLv2 License.
 
 Settings should be defined in *config.json*
 
-**DO NOT** delete *config.example.json*. We need it to make sure the config structure is latest version and the tool can work properly.
+**DO NOT** delete *config.example.json*. We need it to make sure the config structure is the latest version and the tool can work properly.
 
 ```javascript
 {
     "LOG_LEVEL"    : "INFO", // The minimum level of log to be logged
 
-    "GATEWAY"      : "",    // The ip or domain of the front server
+    "GATEWAY"      : "",     // The ip or domain of the front server
 
-    "SERVER_HOST"  : "",    // The ip or domain of the back server
-    "SERVER_PORT"  : 80,    // The port of service on the back server
+    "SERVER_HOST"  : "",     // The ip or domain of the back server
+    "SERVER_PORT"  : 80,     // The port of service on the back server
 
-    "CONNECT_SIGN" : "",    // Auth been the two server and avoid unexpected forward
-    "CONNECT_PORT" : 1201,  // The port to connect with the front server
-    "TRANS_PORT"   : 1202,  // The port to trans to the front server
-    "PUBLIC_PORT"  : 80     // The port you can access from internet
+    "CONNECT_SIGN" : "",     // Auth been the two server and avoid unexpected forward
+    "CONNECT_PORT" : 1201,   // The port to connect with the front server
+    "TRANS_PORT"   : 1202,   // The port to trans to the front server
+    "PUBLIC_PORT"  : 80,     // The port you can access from internet
+    "PUBLIC_AUTH"  : false   // Authority client before mapping
+         // false - disabled
+         // true  - enabled, generate a random code when back server connected
+         // "*"   - enabled, use a specified code
 }
 ```
 
