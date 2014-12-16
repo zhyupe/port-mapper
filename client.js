@@ -18,9 +18,11 @@ var connect = function () {
             if (retry >= 5) {
                 logger.fatal('[connect] Reached limit of retries(5), Exit.');
             } else if (retry != -1) {
-                retry++;
-                logger.info('[connect] Retrying. No.' + retry);
-                connect();
+                setTimeout(function () {
+                    retry++;
+                    logger.info('[connect] Retrying. No.' + retry);
+                    connect();
+                }, 5000);
             } else {
                 logger.fatal('[connect] Failed connecting to server, Exit.');
             }
