@@ -36,15 +36,19 @@
 {
     "LOG_LEVEL"    : "INFO", // 被记录的日志的最低等级
 
-    "GATEWAY"      : "",    // 公网服务器的 IP 或 域名
+    "GATEWAY"      : "",     // 公网服务器的 IP 或 域名
 
-    "SERVER_HOST"  : "",    // 内网服务器的 IP 或 域名
-    "SERVER_PORT"  : 80,    // 内网服务器的端口
+    "SERVER_HOST"  : "",     // 内网服务器的 IP 或 域名
+    "SERVER_PORT"  : 80,     // 内网服务器的端口
 
-    "CONNECT_SIGN" : "",    // 连接认证串，可以避免未经许可的访问
-    "CONNECT_PORT" : 1201,  // 公网服务器通信端口
-    "TRANS_PORT"   : 1202,  // 公网服务器传输端口
-    "PUBLIC_PORT"  : 80     // 从公网访问的端口
+    "CONNECT_SIGN" : "",     // 连接认证串，可以避免未经许可的访问
+    "CONNECT_PORT" : 1201,   // 公网服务器通信端口
+    "TRANS_PORT"   : 1202,   // 公网服务器传输端口
+    "PUBLIC_PORT"  : 80,     // 从公网访问的端口
+    "PUBLIC_AUTH"  : false   // 是否启用公网端口的认证功能
+         // false - 不启用
+         // true  - 启用，每次与内网服务器连接时生成随机认证码
+         // "*"   - 启用，使用固定的认证码
 }
 ```
 
