@@ -8,17 +8,17 @@ The project is published under GPLv2 License.
 
 [Principle introduce (Simplified Chinese)][1]
 
-###Other languages
+### Other languages
 
  * [简体中文][2]
 
-##Requirements
+## Requirements
 
  * A front server has public ip(s)
  * A client server that can access the back server (You can just use the back server)
  * node.js runtime on **both** front and client server
 
-##How to
+## How to
 
  1. Edit settings in *config.json* .
  2. Upload files to both servers.
@@ -28,7 +28,7 @@ The project is published under GPLv2 License.
 
 ***[Notice] You must do the step 3 first, or the client won't work correctly.***
 
-##Setting Definition
+## Setting Definition
 
 Settings should be defined in *config.json*
 
