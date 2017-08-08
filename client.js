@@ -1,11 +1,16 @@
 var config = require('./lib/config');
 
 var log4js = require('log4js');
-log4js.loadAppender('file');
-log4js.addAppender(log4js.appenders.file('logs/client.log'), 'client');
+log4js.configure({
+  appenders: {
+    out: { type: 'stdout' },
+    client: { type: 'file', filename: 'logs/client.log' }
+  },
+  categories: { default: { appenders: ['out', 'client'], level: 'error' } }
+});
 
-var logger = log4js.getLogger('client');
-logger.setLevel(config.LOG_LEVEL);
+var logger = log4js.getLogger();
+logger.level = config.LOG_LEVEL;
 var retry = -1;
 
 var connectClient = require('./lib/client/connectClient');

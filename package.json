@@ -4,11 +4,9 @@
   "license": "GPL-2.0",
   "description": "A port mapping tool by node.js which helps accessing a back server (in LAN, etc), via a front server having public ip(s) and a client server that could access the back server",
   "author": "Innpaul Zhang <zyp108421@gmail.com>",
-
   "repository": "https://github.com/zhyupe/port-mapper",
   "bugs": "https://github.com/zhyupe/port-mapper/issues",
-
   "dependencies": {
-    "log4js": ">= 0.6.21"
+    "log4js": "^2.3.3"
   }
 }
