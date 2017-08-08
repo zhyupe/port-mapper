@@ -1,7 +1,7 @@
 初始化操作
 =========
 
-##server.js
+## server.js
 server.js 启动后，监听 PUBLIC_PORT / CONNECT_PORT / TRANS_PORT 三个端口
 
 ### PUBLIC_PORT
@@ -13,7 +13,7 @@ server.js 启动后，监听 PUBLIC_PORT / CONNECT_PORT / TRANS_PORT 三个端�
 ### TRANS_PORT
 用于接收中转服务器数据传输连接
 
-##client.js
+## client.js
 client.js 启动后，连接 *GATEWAY:CONNECT_PORT* 并请求认证
 
 公网请求接受

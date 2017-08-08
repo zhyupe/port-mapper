@@ -26,7 +26,7 @@ The project is published under GPLv2 License.
  4. Run *server.js* on the **front** server.
  5. Run *client.js* on the **client** server.
 
-***[Notice] You must do the step 3 first, or the client won't work correctly.***
+***[Notice] You must do the step 4 first, or the client won't work correctly.***
 
 ## Setting Definition
 
